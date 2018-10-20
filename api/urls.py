@@ -1,6 +1,8 @@
-from django.contrib import admin
-from django.urls import path
+from rest_framework import routers
 
-urlpatterns = [
+from api.views import ItemViewSet
 
-]
+
+router = routers.SimpleRouter()
+router.register(r'item', ItemViewSet)
+urlpatterns = router.urls
