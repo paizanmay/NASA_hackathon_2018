@@ -7,3 +7,4 @@
 django==2.1.2
 djangorestframework==3.9.0
 pytz==2018.5              # via django
+uwsgi==2.0.17.1
