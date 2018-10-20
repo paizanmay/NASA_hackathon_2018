@@ -9,4 +9,4 @@ class Item(models.Model):
         recommend = "2"
 
     name = models.TextField()
-    status = models.CharField(max_length=2, choices=[(i.name, i.value) for i in ItemStatus])
+    status = models.CharField(max_length=2, choices=[(i.value, i.name) for i in ItemStatus])
